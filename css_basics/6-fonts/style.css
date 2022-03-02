@@ -1,0 +1,29 @@
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+    font-style: italic;
+    /* font-size: 25px; */ /* <-- Este es un tamaño absoluto */
+    font-size: 1.5em; /* <-- Este es un tamaño relativo */
+    color: #000;
+}
+
+/* Más información:
+font-family -> https://www.w3schools.com/css/css_font.asp
+font-size -> https://www.w3schools.com/css/css_font_size.asp
+
+
+Google Font Service:
+
+https://fonts.google.com/
+
+*/
