@@ -43,3 +43,39 @@ console.log(mascota, ' -> ', typeof(mascota));
 console.log(comidaFavorita, ' -> ', typeof(comidaFavorita));
 
 /*---------------------------------------------------------*/
+
+/*-------------------- OBJETOS --------------------*/
+console.log("\n-- Definiendo objetos --")
+
+let persona = {
+    nombres: 'Gabriel',
+    apellidos: 'Villacis',
+    ciudad: 'Guayaquil',
+    celular: '0956565651',
+    edad: 32,
+    esBarcelonista: true
+}
+
+console.log(persona);
+
+// Notación de punto
+persona.nombres = 'Juan Carlos';
+console.log(persona.nombres);
+
+// Notación de corchetes
+persona['ciudad'] = 'Quito';
+console.log(persona['ciudad']);
+
+/*-------------------------------------------------*/
+
+/*-------------------- ARRAYS --------------------*/
+console.log("\n-- Definiendo arrays --")
+
+let colores = ['blanco', 'azul', 'rojo', 'amarillo'];
+console.log(colores);
+
+colores[2] = 25;
+colores[0] = {nombre: 'negro', codigo: '#000'};
+console.log(colores);
+console.log(colores.length);
+/*------------------------------------------------*/
