@@ -4,71 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas en HTML</title>
-    <style>
-        ul {
-            list-style-type: square;
-        }
-    </style>
+    <meta name="autor" content="Gabriel Villacis">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Fundamentos del lenguaje HTML">
+    <title>Mi primera página web</title>
 </head>
 <body>
-    <ul>
-        <li>Cursos</li>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Go</li>
-            </ul>
-        <li>Acerca de mi</li>
-        <li>Suscríbete</li>
-        <li>Contáctame</li>
-    </ul>    
+    <h1>Hola Mundo!</h1>
 
-    
-    <h1>Receta de Pizza</h1>
-    <p>Porciones: 8, Dificultad: Fácil</p>
-    <h2>Ingredientes</h2>
-    <!-- Lista desordenada -->
+    <hr>
+
+    <h2>Estoy listo para aprender HTML</h2>
+    <p>Esta es mi primera página web</p>
+
+    <h3>Mi ruta de aprendizaje</h3>
+    <p>Aprenderé &lt;HTML&gt; con esta secuencia de temas:
+        <!-- Ej.: Lista ordenada. -->
+        <ol>
+            <li>Textos</li>
+            <li>Listas</li>
+            <li>Hipervínculos</li>
+            <li>Imágenes</li>
+            <li>Tablas</li>
+            <li>Elementos semánticos y más</li>
+            <li>Usaré los recursos de <abbr title="Mozilla Developer Network">MDN</abbr></li>
+        </ol>        
+    </p>
+
+    <hr>
+
+    <h2>También planeo irme de vacaciones</h2>
+    <p>He trabajado duro y <em>realmente necesito pegarme una escapada.</em></p>    
+    <p>Vivo en <abbr title="Guayaquil">GYE</abbr>, <strong>quiero irme a la Sierra.</strong></p>
+
+    <h3>Mi itinerario</h3>
+    <!-- Ej.: Lista desordenada. -->
     <ul>
-        <li>1 Taza Harina</li>
-        <li>Ajo En Polvo al gusto</li>
-        <li>Orégano Fresco al gusto</li>
-        <li>1/2 Cucharadita Sal</li>
-        <li>5 Cucharadas de Agua</li>
-        <li>5 Cucharadas Aceite De Oliva</li>
-        <li>1/4 Taza Pasta de tomate</li>
-        <li>2 Cucharadas Salsa de tomate</li>
-        <li>Sal de Ajo al gusto</li>
-        <li>Sal de Cebolla al gusto</li>
-        <li>1 Tomate Riñón</li>
-        <li>1 Taza Queso Mozzarella</li>
-        <li>2 Tazas Jamón</li>
-        <li>1/2 Taza Aceitunas Verdes</li>
-        <li>Ají En Polvo al gusto</li>
+        <li><p>Ascender el Chimborazo</p></li>
+        <li><p>Deportes de aventura en Baños</p></li>
+        <li><p>Ir a Cuenca a comer cuy con Coca&nbsp;Cola, en Guajibamba:</p><address>Luis Cordero 12-32 y G. Sangurima</address></li>
     </ul>
-    <h2>Instrucciones (Formato 1)</h2>
-    <!-- Lista ordenada -->
-    <ol>
-        <li>Precalienta el horno a 200°C. Toma los ingredientes secos para la masa y mézclalos en un recipiente amplio. Realiza un hoyo en el centro de los ingredientes e incorpora los ingredientes líquidos a la masa y las especies. Mezcla bien y empieza amasar en el mismo recipiente. Si ves que la masa necesita más agua añade poco a poco más agua.</li>
-        <li>Retira del recipiente y continúa amasando la masa en el mesón enharinado, amasa hasta que la masa se desprenda de tus manos y queda muy tersa. Cúbrela con una toalla limpia y deja reposar durante 2 horas.</li>
-        <li>Para la salsa, coloca todos los ingredientes en un sartén y cocina durante 5 minutos espesando ligeramente la salsa. Enfría y reserva.</li>
-        <li>Toma la masa reservada anteriormente y estírala en forma redonda del tamaño de tu molde. Coloca en la lata y pínchala con un cuchillo o palillo en toda la masa menos los bordes. Coloca la salsa sobre la masa esparciéndola sin llegar a los bordes y coloca los toppings previamente cortados en pedazos, a tu gusto.</li>
-        <li>Lleva la pizza al horno precalentado y hornea durante 10 a 15 minutos. Si ves que se está tostando mucho retírala antes. Antes de servir coloca un chorrito de aceite de oliva sobre la pizza.</li>
-    </ol>
 
-    <h2>Instrucciones (Formato 2)</h2>
-    <!-- Lista descriptiva -->
+    <h3>Los que me gustaría hacer</h3>
+    <!-- Ej.: Lista de definiciones. -->
     <dl>
-        <dt>Hacer la masa</dt>
-        <dd>Precalienta el horno a 200°C. Toma los ingredientes secos para la masa y mézclalos en un recipiente amplio. Realiza un hoyo en el centro de los ingredientes e incorpora los ingredientes líquidos a la masa y las especies. Mezcla bien y empieza amasar en el mismo recipiente. Si ves que la masa necesita más agua añade poco a poco más agua.</dd>
-        <dt>Dejar reposar</dt>
-        <dd>Retira del recipiente y continúa amasando la masa en el mesón enharinado, amasa hasta que la masa se desprenda de tus manos y queda muy tersa. Cúbrela con una toalla limpia y deja reposar durante 2 horas.</dd>
-        <dt>Hacer la salsa</dt>
-        <dd>Para la salsa, coloca todos los ingredientes en un sartén y cocina durante 5 minutos espesando ligeramente la salsa. Enfría y reserva.</dd>
-        <dt>Armar la pizza</dt>
-        <dd>Toma la masa reservada anteriormente y estírala en forma redonda del tamaño de tu molde. Coloca en la lata y pínchala con un cuchillo o palillo en toda la masa menos los bordes. Coloca la salsa sobre la masa esparciéndola sin llegar a los bordes y coloca los toppings previamente cortados en pedazos, a tu gusto.</dd>
-        <dt>Hornear</dt>
-        <dd>Lleva la pizza al horno precalentado y hornea durante 10 a 15 minutos. Si ves que se está tostando mucho retírala antes. Antes de servir coloca un chorrito de aceite de oliva sobre la pizza.</dd>
-    </dl>
+        <dt>Ver los paisajes desde el Tren de la Nariz del Diablo</dt>
+        <dd>Catalogada como la ruta del tren más difícil de construir del mundo, por su peculiar forma de zig-zag. En este recorrido se puede observar los típicos paisajes andinos, cultura, folklore y artesanías.</dd>        
+        <dt>Ver aves en Mindo</dt>
+        <dd>Recorrer los diversos senderos y carreteros que rodean al Bosque Mindo Nambillo, para observar y fotografiar a las pintorescas y diversas especies como el gallito de peña, el quetzal, tucanes, y colibríes que llaman la atención por sus tamaños y colores.</dd>
+        <dt>Acampar en Mangahurco en el florecimiento de guayacanes</dt>
+
+        <dd>En Mangahurco se encuentra el bosque de Guayacanes más grande del mundo y cada enero se puedo ver el espectáculo de las 40,000 hectáreas de árboles con flores amarillas.</dd>
+    <p>&copy; 2022 - Gabriel Villacis &reg;</p> 
+
 </body>
 </html>
+
+<!-- Más información sobre Character Entities:
+    https://www.w3schools.com/html/html_lists.asp -->
