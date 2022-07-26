@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Gabriel Villacis">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Fundamentos del lenguaje HTML">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Mis objetivos del 2022</h1>
+        <hr>
+        <nav aria-label="principal-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Aprender HTML</a>
+                </li>
+                <li>
+                    <a href="#vacacion">Vacacionar</a>
+                </li>
+                <li>
+                    <a href="#contactame">Contáctame</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+    <main>
+        <article id="html">
+            <h2>Estoy listo para aprender HTML</h2>
+            <p>Esta es mi primera página web</p>
+
+            <section>
+                <h3>HTML5</h3>
+                <img src="https://www.nicepng.com/png/detail/352-3529769_html5-course-training-content-details-logo-html-5.png" alt="Logo HTML5" title="Aprendiendo HTML5">
+
+                <figure>
+                    <figcaption>Ejemplo:</figcaption>
+                    <code>&lt;h2&gt;Hola Mundo!&lt;/h2&gt;</code>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Mi ruta de aprendizaje</h3>
+                <p>Aprenderé &lt;HTML&gt; con esta secuencia de temas:</p>
+                <!-- Ej.: Lista ordenada. -->
+                <ol>
+                    <li>Textos</li>
+                    <li>Listas</li>
+                    <li>Hipervínculos</li>
+                    <li>Imágenes</li>
+                    <li>Tablas</li>
+                    <li>Elementos semánticos y más</li>
+                    <li>Usaré los recursos de <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr></li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Adivina la <mark>cantidad de horas</mark> que codifico por día</summary>
+                        <p>Inicio a las <time datetime="08:00">8 am</time> y codifico <time datetime="PT3H">3 horas</time>cada mañana</p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>Mi horario</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Actividad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mañana</th>
+                            <td>8am - 11am</td>
+                            <td>Estudio Programación</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mediodía</th>
+                            <td>11am - 12pm</td>
+                            <td>Almuerzo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tarde</th>
+                            <td>12pm - 18pm</td>
+                            <td>Estudio otras materias</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Tiempo libre</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Esto se repite de lun-vie.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        <hr>
+        <article id="vacacion">
+            <h2>También planeo irme de vacaciones</h2>
+            <p>He trabajado duro y <em>realmente necesito pegarme una escapada.</em></p>    
+            <p>Vivo en <abbr title="Guayaquil">GYE</abbr>, <strong>quiero irme a la Sierra.</strong></p>
+
+            <section>
+                <h3>Mi itinerario</h3>            
+                <ul>
+                    <li>
+                        <p>Ascender el <a href="https://www.toursquitoecuador.com/es/tours/ascenso-chimborazo-tour-2-dias/" target="_blank">Chimborazo</a></p>
+                        <figure>
+                            <img src="../assets/volcan-chimborazo.jpeg" alt="Fotografía del Volcan Chimborazo" title="Volcan Chimborazo" width="290" height="170" loading="lazy">
+                            <figcaption>Fotografía del Volcan Chimborazo, 2020</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>Deportes de aventura en <a href="https://banos-ecuador.com/es-ec/tungurahua/banos-de-agua-santa/rutas-aventuras/aventura-banos-agua-santa-ad05f6224" target="_blank">Baños</a></p>
+                        <figure>
+                            <img src="../assets/deportes-baños.jpg" alt="Fotografía de Jumping en Baños" title="Jumping en Baños" width="290" height="170" loading="lazy">
+                            <figcaption>Práctica de Jumping en Baños, 2021</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>Ir a Cuenca a comer cuy con Coca&nbsp;Cola, en <a href="https://www.facebook.com/guajibamba/" target="_blank">Guajibamba:</a></p><address>Luis Cordero 12-32 y G. Sangurima</address>
+                        <figure>
+                            <img src="../assets/cuy-asado.jpg" alt="Fotografía de Cuy asado" title="Cuy Asado" width="290" height="170" loading="lazy">
+                            <figcaption>Cuy asado y otras delicias</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Lo que me gustaría hacer</h3>
+                <dl>
+                    <dt>Ver los paisajes desde el Tren de la Nariz del Diablo</dt>
+                    <dd>Catalogada como la ruta del tren más difícil de construir del mundo, por su peculiar forma de zig-zag. En este recorrido se puede observar los típicos paisajes andinos, cultura, folklore y artesanías.</dd>
+
+                    <dt>Ver aves en Mindo</dt>
+                    <dd>Recorrer los diversos senderos y carreteros que rodean al Bosque Mindo Nambillo, para observar y fotografiar a las pintorescas y diversas especies como el gallito de peña, el quetzal, tucanes, y colibríes que llaman la atención por sus tamaños y colores.</dd>
+
+                    <dt>Acampar en Mangahurco en el florecimiento de guayacanes</dt>
+                    <dd>En Mangahurco se encuentra el bosque de Guayacanes más grande del mundo y cada enero se puedo ver el espectáculo de las 40,000 hectáreas de árboles con flores amarillas.</dd>
+                </dl>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="contactame">
+            <h2>Contáctame</h2>
+            <p>Si tienes alguna consulta o comentario, no dudes es escribir.</p>
+
+            <form action="https://httpbin.org/get" method="GET ">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan" autocomplete="off" required autofocus><br>
+
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" name="apellido" id="apellido" placeholder="Velasco" autocomplete="off" required><br>
+                    
+                    <label for="contraseña">Contraseña:</label><br>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Abc$1234." required><br>
+                                    
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" name="telefono" id="telefono" placeholder="04-2589-147" autocomplete="off" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" required><br>
+                    <small>Formato: 04-2589-147</small><br>
+
+                    <label for="ciudad">Ciudad:</label><br>
+                    <select name="ciudad" id="ciudad">
+                        <option value="guayaquil">Guayaquil</option>
+                        <option value="quito">Quito</option>
+                        <option value="cuenca">Cuenca</option>
+                        <option value="riobamba">Riobamba</option>
+                        <option value="esmeraldas">Esmeraldas</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivo del contacto</legend>
+
+                    <input type="radio" name="motivo" id="consulta" value="consulta">
+                    <label for="consulta">Consulta</label>
+
+                    <input type="radio" name="motivo" id="incidencia" value="incidencia">
+                    <label for="incidencia">Incidencia</label>
+
+                    <input type="radio" name="motivo" id="reclamo" value="reclamo">
+                    <label for="reclamo">Reclamo</label>
+
+                    <input type="radio" name="motivo" id="otro" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+
+            </form>
+        </article>
+
+    </main>
+    <hr>
+    <footer>    
+        <p>&copy; 2022 - <a href="about.html">Gabriel Villacis</a> &reg;</p> 
+        <p><a href="#">Ir arriba</a></p>
+    </footer>
+</body>
+</html>
+
+<!-- Más información sobre Tablas:
+    https://www.w3schools.com/html/html_tables.asp -->
