@@ -154,7 +154,7 @@
 
         <article id="contactame">
             <h2>Contáctame</h2>
-            <p>Si tienes alguna consulta o comentario, no dudes es escribir.</p>
+            <p>Si tienes alguna consulta o comentario, no dudes en escribir.</p>
 
             <form action="https://httpbin.org/get" method="GET ">
                 <fieldset>
@@ -199,6 +199,19 @@
                     <label for="otro">Otro</label>
                 </fieldset>
 
+                <fieldset>
+                    <legend>Comentario:</legend>
+                    <label for="comentario"></label><br>
+                    <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Escriba su comentario" required></textarea><br>
+
+                    <input type="checkbox" name="aceptacion" id="aceptacion" required>
+                    <label for="aceptacion">Acepta las condiciones</label>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="submit" formaction="https://httpbin.org/post" formmethod="POST" value="Enviar vía POST">
+                <input type="button" value="Limpiar">
             </form>
         </article>
 
