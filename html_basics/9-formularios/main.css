@@ -1,0 +1,10 @@
+table, tr, td, th, caption {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+}
