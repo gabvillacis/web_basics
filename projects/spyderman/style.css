@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: #7d0000;
+}
+
+.title {
+    color: #000;
+    font-family: Sriracha, Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 5px #FF0000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar {    
+    top: 0;
+    left: 0;
+    right: 0;    
+    padding: 1px;
+    width: 100%;
+}  
+  
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;  
+}
+  
+li a {
+    color: white;
+    font-size: 25px;
+    font-family: Sriracha, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+  
+li a:hover {
+    color: #FFFF00;
+    text-shadow: 3px 3px 2px #0000FF;
+}
+  
+main {    
+    width: 100%;
+    background-color: #012052;    
+    color: white;
+    font-family: Sriracha, Helvetica, Arial, sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px 5px red;
+}
+  
+.hero-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.hero-info {
+    border: 2px solid white;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5%;
+    height: 100%;
+}
+  
+.hero-info ul {
+    font-size: 18px;
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 2.5;
+    text-shadow: 1px 1px 5px red;
+}
+  
+.hero-info p {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    text-shadow: 1px 1px 5px red;
+}
+  
+img {
+    padding: 20px;
+}
+  
+#comic-section, #films-section {
+    text-align: center;
+}
+  
+.comic-box, .films-box {
+    margin: auto;
+    max-width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.comic-single, .films-single {
+    padding: 10px;
+}
+  
+.comic-single p, .films-single p {
+    text-shadow: 1px 1px 5px red;
+    font-size: 18px;
+}  
+
+footer {
+    background-color: #7d0000;
+    padding: 10px;
+    color: #FFFFFF;
+    font-family: Sriracha, Helvetica, Arial, sans-serif;
+}
