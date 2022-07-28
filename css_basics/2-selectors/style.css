@@ -1,149 +1,30 @@
 /* Selector universal: Selecciona todos los elementos.*/
 * {
-    font-weight: 600;
+    font-size: 24;
+    background-color: lightcyan;
 }
 
 /* Selector de tipo: Selecciona todos los elementos que coinciden con el nombre del elemento especificado */
-body {
-    background-color:lightcyan;    
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+    font-size: 15px;
 }
 
 /* Selector de clase: Selecciona todos los elementos que tienen el atributo class especificado. */
-.card {
-    background-color: lightslategray;
-    font-size: 25px;
-    margin: 10px;
+.green-title {
+    color: green;
+    background-color: white;
 }
 
 /* Selector de ID: Selecciona un elemento basándose en el valor de su atributo id.
 Solo puede haber un elemento con un determinado ID dentro de un documento. */
-#gold-card {
-    background-color: gold;
-    font-size: 40px;
-    margin: 10px;
-    color: orangered;
-}
-
-/* Selector de atributo: Selecciona elementos basándose en el valor de un determinado atributo. */
-/* Elementos <a> que tengan atributo target */
-a[target] {
-    color: white;
-    font-size: 18px;
-}
-
-/* Elementos <a> cuyo atributo href haga match con "https://www.google.com". */
-a[href="https://www.google.com"] {
-    color: greenyellow;
-    font-size: 18px;
-}
-
-/* Elementos <a> cuyo atributo href contenga "facebook" */
-a[href*="facebook"] {
-    text-decoration: none;
-    font-size: 18px;
+#second {
     font-style: italic;
-}
-
-/* Elementos <a> cuyo atributo href inicie con "https" y finalice con ".org" */
-a[href^="https"][href$=".org"] {
-    font-size: 18px;    
-    color:royalblue;
-}
-
-/* Elementos <a> cuyo atributo class contenga la palabra "link" */
-a[class~="link"] {    
-    font-size: 18px;
-    color: black;
-    margin-left: 100px;
-}
-
-/* Combinador */
-#card-xyz p {
-    font-size: 15px;
-    color: white;
-    margin: auto;
-}
-
-/* Combinador de hijo: El combinador > selecciona los elementos que son hijos directos del primer elemento. */
-#card-xyz > p {
-   background-color: black; 
-}
-
-/* Combinador de hermano adyacente: El combinador + sólo seleccionará un elemento especificado que esté inmediatamente después del otro elemento especificado. */
-#card-xyz + p {
-    margin-left: 10px;
-    font-size: 25px;
-}
-
-/* Combinador de hermanos: El combinador ~ selecciona hermanos.
-Esto quiere decir que selecciona el segundo elemento sólo si está precedido por el primero (no necesariamente de forma inmediata)
-y ambos comparten el mismo elemento padre. */
-
-h4 ~ p {
-    color: lightblue;
-    font-size: 18px; 
-}
-
-#pseudoclasses-card, #pseudoelements-card {
-    background-color: lightsalmon;
-    font-size: 15px;
-    margin: 10px;
-}
-
-/* Pseudoclases: Permiten la selección de elementos, basada en información de estado que no está contenida en el árbol de documentos.
-Índice de pseudoclases: https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
-*/
-
-/*
-#pseudoclasses-card :first-child {
-    color: darkblue;    
-    text-transform: uppercase;
-}
-
-#pseudoclasses-card :first-of-type {
-    font-style: italic;
-}
-
-#pseudoclasses-card p:first-of-type {
-    font-style: italic;
-}
-*/
-
-#pseudoclasses-card ul li:nth-child(odd) {
-    color: dodgerblue;
-}
-
-#pseudoclasses-card a:visited {
-    color: white;
-}
-
-#pseudoclasses-card a:hover {
-    color: dodgerblue;
-}
-
-
-/* Pseudoelementos: Permiten permiten añadir estilos a una parte concreta del documento.
-Índice de pseudoelementos: https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
-*/
-
-#pseudoelements-card p::first-letter {
-    font-size: 500%;    
-}
-
-#pseudoelements-card p::first-line {
-    font-weight: 100;
-}
-
-#pseudoelements-card ::selection {
-    background-color: yellow;
-}
-
-#pseudoelements-card h1::before {
-    content: '***';
-}
-
-#pseudoelements-card h1::after {
-    content: '!!!';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
 }
 
 /* Más información sobre selectores CSS: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors*/
