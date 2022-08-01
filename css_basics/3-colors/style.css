@@ -1,0 +1,28 @@
+* {
+    font-size: 24;    
+}
+
+body {
+    padding-left: 25px;
+    padding-right: 25px;
+    /* Color de fondo */
+    background-color: papayawhip; 
+    /* Color de letra */
+    color: #1725ae; 
+    /* color: rgb(23, 37, 174) */
+    /* color: hsl(235, 87%, 39%) */
+}
+
+p {
+    color: rgba(23, 37, 174, 0.7);
+    text-align: justify;
+}
+
+/*  Paletas/herramientas de colores:
+
+    https://htmlcolorcodes.com/es/
+    https://color.adobe.com/es/create/color-wheel
+
+    https://coolors.co/
+
+    Más información sobre HSL: https://www.nixsensor.com/blog/what-is-hsl-color */
