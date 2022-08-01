@@ -1,12 +1,14 @@
 /* Selector universal: Selecciona todos los elementos.*/
 * {
-    font-size: 24;
-    background-color: lightcyan;
+    font-size: 24;    
 }
 
 /* Selector de tipo: Selecciona todos los elementos que coinciden con el nombre del elemento especificado */
-h1 {
-    color: red;
+
+body {
+    background-color: lightcyan;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 p {
@@ -15,8 +17,9 @@ p {
 }
 
 /* Selector de clase: Selecciona todos los elementos que tienen el atributo class especificado. */
-.green-title {
-    color: green;
+.red-title {
+    color: red;
+    text-align: center;
     background-color: white;
 }
 
@@ -24,7 +27,37 @@ p {
 Solo puede haber un elemento con un determinado ID dentro de un documento. */
 #second {
     font-style: italic;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid darkblue;
+    padding: 10px;    
 }
 
-/* Más información sobre selectores CSS: https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors*/
+
+/* -- Selectores Combinados -- */
+
+/*  Selector de descendientes (Descendant Selector) 
+
+    Afecta a todos los elementos que sean descendientes de otro elemento especificado,
+    sin importar el nivel de profundidad al que se encuentren.
+*/
+article strong {
+    font-weight: bold;
+    color: orangered;    
+    margin-left: 25px;
+}
+
+/*  Selector de Hijo Directo (Child Selector)
+
+    Este selector actúa sobre todos aquellos elementos que sean hijos de otro elemento especificado,
+    pero que se encuentren en el primer nivel, es decir, si están dentro de otro elemento hijo de ese mismo padre,
+    no serán tomados en cuenta.
+*/
+article > strong {
+    text-decoration: underline;
+}
+
+/* Más información sobre selectores CSS: 
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors
+    
+    https://www.w3schools.com/css/css_combinators.asp
+*/
