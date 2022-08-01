@@ -1,0 +1,16 @@
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/*
+Más información sobre longitudes:
+
+https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units#longitudes
+
+*/
