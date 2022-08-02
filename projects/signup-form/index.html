@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="container">
+        <header>
+            <h1>Formulario de Registro</h1>
+        </header>
+        <main>
+            <form action="#">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstName" class="form-label">Nombre:</label>
+                        <input type="text" id="firstName" class="form-control" placeholder="Marcos">
+                    </div>                
+                    <div class="col">
+                        <label for="lastName" class="form-label">Apellido: </label>
+                        <input type="text" id="lastName" class="form-control" placeholder="Ríos">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" class="form-control" placeholder="nombre@ejemplo.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="password1" class="form-label">Contraseña:</label>
+                        <input type="password" id="password1" class="form-control" placeholder="********">
+                    </div>
+                    <div class="col">
+                        <label for="password2" class="form-label">Contraseña:</label>
+                        <input type="password" id="password2" class="form-control" placeholder="********">
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h6>Género:</h6>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="genderM" class="form-check-input" name="gender" value="M">
+                            <label class="form-check-label" for="genderM">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="genderF" class="form-check-input" name="gender" value="F">
+                            <label class="form-check-label" for="genderF">Femenino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="genderO" class="form-check-input" name="gender" value="O">
+                            <label class="form-check-label" for="genderO">Prefiero no decirlo</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6>Hobbies:</h6>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="hobbie1" class="form-check-input" value="musica">
+                            <label class="form-check-label" for="hobbie1">Música</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="hobbie2" class="form-check-input" value="deportes">
+                            <label class="form-check-label" for="hobbie2">Deportes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="hobbie3" class="form-check-input" value="cine">
+                            <label class="form-check-label" for="hobbie3">Cine</label>
+                        </div>                        
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="hobbie4" class="form-check-input" value="viajar">
+                            <label class="form-check-label" for="hobbie4">Viajar</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" id="hobbie5" class="form-check-input" value="leer">
+                            <label class="form-check-label" for="hobbie5">Leer</label>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="incomeSource" class="form-label">Fuente de Ingresos:</label>
+                        <select id="incomeSource" class="form-select" aria-label="">
+                            <option value="1" selected>Empleado</option>
+                            <option value="2">P. Independiente</option>
+                            <option value="2">Me saque la lotería</option>                            
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="income" class="form-label">Ingresos:</label>
+                        <input type="range" id="income" class="form-range" min="100" max="20000" step="100">
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="profilePictureFile" class="form-label">Foto de perfil</label>
+                        <input type="file" id="profilePictureFile" class="form-control" accept="image/*">
+                    </div>
+                    <div class="col">
+                        <label for="age" class="form-label">Edad:</label>
+                        <input type="number" id="age" class="form-control" placeholder="Ingrese su edad">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+        </footer>    
+    </div>
+</body>
+</html>
+
+<!-- 
+Referencia: 
+
+https://getbootstrap.com/docs/5.0/forms/overview/ -->
