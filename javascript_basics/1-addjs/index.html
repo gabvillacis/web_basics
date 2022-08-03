@@ -20,4 +20,8 @@
 </html>
 
 <!-- Se puede insertar Javascript tanto en head como en body -->
-<!-- Se recomienda que el Javascript sea insertado al final del body -->
+
+<!--    
+    Se recomienda que el Javascript sea insertado antes de cerrar la etiqueta body.
+    Esto se hace así porque generalmente el Javascript tiene que ponerse en marcha cuando el navegador ha procesado el HTML. No sirve de mucho que el navegador procese el Javascript cuando el usario todavía no ha podido ver el contenido de la página. Además, el Javascript muchas veces debe operar con los elementos de la página, para modificarlos dinámicamente y ésto se tiene que hacer cuando los elementos han sido cargados por el navegador.
+ -->
