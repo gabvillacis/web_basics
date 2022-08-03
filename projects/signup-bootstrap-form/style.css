@@ -1,0 +1,12 @@
+body {
+    padding: 50px 15%;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.green-label {
+    color: #3fb897;
+    font-weight: 700;
+}
