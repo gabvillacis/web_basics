@@ -1,0 +1,230 @@
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E9EFEC;
+    margin: 0;
+    padding: 0;
+    color: #16423C;
+}
+
+/* Encabezado */
+header {
+    background-color: #16423C;
+    color: #E9EFEC;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Menú de Navegación */
+nav {
+    background-color: #6A9C89;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #E9EFEC;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #16423C;
+}
+
+/* Carrusel */
+#carrusel {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #C4DAD2;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.prev, .next {
+    background-color: rgba(22, 66, 60, 0.7);
+    border: none;
+    color: #E9EFEC;
+    padding: 5px 12px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(22, 66, 60, 0.9);
+}
+
+/* Contenido Principal */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* Sección Informativa */
+#informacion h2 {
+    color: #16423C;
+    text-align: center;
+}
+
+#informacion p {
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Formulario de Registro */
+#registro form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#registro h2 {
+    text-align: center;
+    color: #16423C;
+}
+
+#registro label {
+    display: block;
+    margin-top: 15px;
+    color: #16423C;
+    font-weight: bold;
+}
+
+#registro input[type="text"],
+#registro textarea,
+#registro select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #C4DAD2;
+    border-radius: 5px;
+    background-color: #E9EFEC;
+}
+
+#registro input[type="text"]:focus,
+#registro textarea:focus,
+#registro select:focus {
+    border-color: #6A9C89;
+    outline: none;
+}
+
+#registro input[type="submit"] {
+    margin-top: 20px;
+    background-color: #6A9C89;
+    color: #E9EFEC;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+#registro input[type="submit"]:hover {
+    background-color: #16423C;
+}
+
+/* Sección del Mapa */
+#mapa {
+    padding: 40px 20px;
+    background-color: #C4DAD2;
+    border-radius: 10px;
+}
+
+#mapa h2 {
+    text-align: center;
+    color: #16423C;
+}
+
+#mapa-contenedor {
+    height: 500px;     
+}
+
+/* Pie de Página */
+footer {
+    background-color: #16423C;
+    color: #E9EFEC;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Diseño Responsivo */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .prev, .next {
+        padding: 3px 8px;
+    }
+
+    #registro form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}

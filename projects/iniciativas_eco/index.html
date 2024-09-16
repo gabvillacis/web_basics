@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Iniciativas Ecológicas Locales</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Mapa de Iniciativas Ecológicas Locales</h1>
+    </header>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#registro">Registrar Iniciativa</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrusel de Imágenes -->
+    <section id="carrusel">
+        <h2>Iniciativas Destacadas</h2>
+        <div class="carrusel-contenedor">
+            <!-- Slides -->
+            <div class="slide">
+                <img src="img/1.jpg" alt="Imagen 1">
+                <p>Descripción de la imagen 1</p>
+            </div>
+            <div class="slide">
+                <img src="img/2.jpg" alt="Imagen 2">
+                <p>Descripción de la imagen 2</p>
+            </div>
+            <div class="slide">
+                <img src="img/3.jpg" alt="Imagen 3">
+                <p>Descripción de la imagen 3</p>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="prev">«</button>
+            <button class="next">»</button>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección Informativa -->
+        <section id="informacion">
+            <h2>Sobre Nosotros</h2>
+            <p>Esta plataforma tiene como objetivo identificar y promover iniciativas ecológicas en nuestra comunidad, como puntos de reciclaje, tiendas eco-friendly y zonas de reforestación.</p>
+            <p>Únete a nosotros para crear un mundo más sostenible y conectado con el medio ambiente.</p>
+        </section>
+
+        <!-- Formulario de Registro -->
+        <section id="registro">
+            <h2>Registrar Nueva Iniciativa</h2>
+            <form action="#" method="post">
+                <!-- Campos del formulario -->
+                <label for="nombre">Nombre de la Iniciativa:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="reciclaje">Reciclaje</option>
+                    <option value="reforestacion">Reforestación</option>
+                    <option value="tienda_eco">Tienda Eco-friendly</option>
+                    <option value="educacion">Educación Ambiental</option>
+                    <option value="energia">Energía Renovable</option>
+                </select>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <!-- Campo para ubicación, se integrará con el mapa más adelante -->
+                <label for="ubicacion">Ubicación (Latitud, Longitud):</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ejemplo: -12.0464, -77.0428" required>
+
+                <input type="submit" value="Registrar Iniciativa">
+            </form>
+        </section>
+
+        <!-- Sección del Mapa -->
+        <section id="mapa">
+            <h2>Mapa de Iniciativas</h2>
+            <div id="mapa-contenedor">
+                <!-- Aquí se cargará el mapa interactivo -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.19938640995!2d-80.14492096022474!3d-2.1524923522580144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses!2sec!4v1726457127233!5m2!1ses!2sec" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Mapa de Iniciativas Ecológicas Locales</p>
+    </footer>
+
+</body>
+</html>
