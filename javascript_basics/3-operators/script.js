@@ -32,8 +32,10 @@ console.log(z < 0);
 console.log(z <= 0);
 
 // Operadores de igualdad (nivel estricto)
+console.log(z == 1);
 console.log(z === 1);
 console.log(z !== 1);
+
 
 /* --------------------------------------------------------- */
 

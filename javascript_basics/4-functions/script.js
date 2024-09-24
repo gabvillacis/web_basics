@@ -1,3 +1,6 @@
+/* Función con notación tradicional
+   Incluye bloque de control de flujo: if/else
+*/
 function saludar(nombre) {
     if (nombre) {
         console.log("Hello world, " + capitalizar(nombre));
@@ -6,9 +9,14 @@ function saludar(nombre) {
     }
 }
 
+/* Función con notación de flecha (arrow function) */
 const capitalizar = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
+/* Función con notación de flecha (arrow function)
+   Incluye bucle for
+*/
 
 const multiplicar = (n1, n2) => {
     let acumulador = 0;
@@ -20,6 +28,7 @@ const multiplicar = (n1, n2) => {
 }
 
 saludar("gabriel");
+saludar("luis");
+saludar();
 
 console.log(multiplicar(5, 10));
-
