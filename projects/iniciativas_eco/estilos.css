@@ -1,71 +1,65 @@
-/* Estilos Generales */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #E9EFEC;
+    background-color: #E9EFEC; /* Color de fondo claro */
     margin: 0;
     padding: 0;
-    color: #16423C;
+    color: #16423C; /* Color de texto principal */
+    font-size: 16px;
 }
 
-/* Encabezado */
-header {
-    background-color: #16423C;
-    color: #E9EFEC;
+#encabezado {
+    background: linear-gradient(90deg, rgba(22,66,60,1) 44%, rgba(106,156,137,1) 85%, rgba(233,239,236,1) 100%);
+    color: #E9EFEC; /* Texto claro */
     padding: 20px;
-    text-align: center;
+    text-align: center; 
 }
 
-header h1 {
+#encabezado h1 {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     font-size: 2.5em;
 }
 
-/* Menú de Navegación */
-nav {
+#navegacion {
     background-color: #6A9C89;
 }
 
-nav ul {
-    list-style: none;
+#navegacion ul {
+    list-style: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos */
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
+#navegacion a {
     display: block;
-    color: #E9EFEC;
+    color: #E9EFEC; /* Texto claro */
     padding: 15px 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #16423C;
+#navegacion a:hover {
+    background-color: #16423C; /* Cambia el fondo al pasar el cursor */    
 }
 
-/* Carrusel */
 #carrusel {
     text-align: center;
     padding: 20px 10px;
-    background-color: #C4DAD2;
+    background-color: #C4DAD2; /* Color de acento */   
 }
 
-.carrusel-contenedor {
+#carrusel-contenedor {
     position: relative;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .slide {
-    display: none;
+    display: none; /* Oculta los slides por defecto */
 }
 
 .slide img {
@@ -75,31 +69,34 @@ nav ul li a:hover {
 }
 
 .slide:first-child {
-    display: block;
+    display: block; /* Muestra el primer slide */
 }
 
-.prev, .next {
-    background-color: rgba(22, 66, 60, 0.7);
+/* Botones de navegación */
+#prev, #next {
+    background-color: white; /* Color semitransparente */
     border: none;
-    color: #E9EFEC;
+    color: rgba(22, 66, 60, 0.7);
     padding: 5px 12px;
     position: absolute;
     top: 50%;
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.5em;
+    transform: translateY(-50%); /* Centra verticalmente */    
 }
 
-.prev {
+#prev {
     left: 15px;
 }
 
-.next {
+#next {
     right: 15px;
 }
 
-.prev:hover, .next:hover {
+#prev:hover, #next:hover {
     background-color: rgba(22, 66, 60, 0.9);
+    color: white;
 }
 
 /* Contenido Principal */
@@ -107,7 +104,7 @@ main {
     padding: 40px 20px;
 }
 
-section {
+main section {
     margin-bottom: 60px;
 }
 
@@ -118,13 +115,18 @@ section {
 }
 
 #informacion p {
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 20px auto;
+    line-height: 1.8; /* Espacio entre líneas */
+    max-width: 800px; /* Ancho máximo para mejorar la legibilidad */
+    margin: 20px auto; /* Centra el texto */
     text-align: center;
 }
 
 /* Formulario de Registro */
+#registro h2 {
+    text-align: center;
+    color: #16423C;
+}
+
 #registro form {
     max-width: 600px;
     margin: auto;
@@ -132,11 +134,6 @@ section {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#registro h2 {
-    text-align: center;
-    color: #16423C;
 }
 
 #registro label {
@@ -157,13 +154,6 @@ section {
     background-color: #E9EFEC;
 }
 
-#registro input[type="text"]:focus,
-#registro textarea:focus,
-#registro select:focus {
-    border-color: #6A9C89;
-    outline: none;
-}
-
 #registro input[type="submit"] {
     margin-top: 20px;
     background-color: #6A9C89;
@@ -180,6 +170,13 @@ section {
     background-color: #16423C;
 }
 
+#registro input[type="text"]:focus,
+#registro textarea:focus,
+#registro select:focus {
+    border-color: #6A9C89;
+    outline: none;
+}
+
 /* Sección del Mapa */
 #mapa {
     padding: 40px 20px;
@@ -192,39 +189,38 @@ section {
     color: #16423C;
 }
 
-#mapa-contenedor {
-    height: 500px;     
+
+#mapa div {
+    height: 500px;
 }
 
 /* Pie de Página */
-footer {
+#pie-de-pagina {
     background-color: #16423C;
     color: #E9EFEC;
     text-align: center;
     padding: 15px;
 }
 
-footer p {
+#pie-de-pagina p {
     margin: 0;
     font-size: 0.9em;
 }
 
-/* Diseño Responsivo */
-@media screen and (max-width: 768px) {
-    nav ul {
+@media screen and (max-width: 450px) {
+    #encabezado h1 {
+        font-size: 1.5em;
+    }
+    
+    #navegacion ul {   
         flex-direction: column;
     }
 
-    .prev, .next {
-        padding: 3px 8px;
+    #navegacion li {
+        text-align: center;
     }
 
-    #registro form {
-        width: 100%;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
+    #navegacion a {
+        padding: 5px 20px;
     }
 }
