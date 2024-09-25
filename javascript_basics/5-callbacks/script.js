@@ -4,11 +4,11 @@ function obtenerDatosDelServidor(callback) {
   
   // Utilizamos setTimeout para simular el tiempo que tarda en llegar la respuesta del servidor.
   setTimeout(() => {
-      // Simulamos los datos que llegarían desde el servidor
-      const datos = { nombre: "Producto A", precio: 100 };
-      
-      // Llamamos a la función callback con los datos que obtuvimos después del retraso
-      callback(datos);  
+    // Simulamos los datos que llegarían desde el servidor
+    const datos = { nombre: "Producto A", precio: 100 };
+    
+    // Llamamos a la función callback con los datos que obtuvimos después del retraso
+    callback(datos);  
   }, 2000);  // Esperamos 2 segundos para simular la solicitud al servidor
 }
 
